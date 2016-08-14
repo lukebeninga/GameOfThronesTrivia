@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uqu-zZ-xRH"/>
+                        <viewControllerLayoutGuide type="bottom" id="I4O-ts-zal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-7T-ZdW">
+                                <rect key="frame" x="40" y="475" width="520" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next Fact"/>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVu-yh-Kzp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-cO-8ZQ">
+                                <rect key="frame" x="40" y="192" width="360" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed9-bA-csW">
+                                <rect key="frame" x="40" y="246" width="520" height="108"/>
+                                <string key="text">Benioff and Weiss convinced George R.R. Martin to let them adapt the books by answering the question, \"Who is Jon Snow's mother? Benioff and Weiss convinced George R.R. Martin to let them adapt the books by answering the question, \"Who is Jon Snow's mother?"</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fdb-cO-8ZQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="5zc-yL-EQ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdb-cO-8ZQ" secondAttribute="trailing" constant="221" id="6Pu-6l-LIM"/>
+                            <constraint firstItem="Ed9-bA-csW" firstAttribute="top" secondItem="fdb-cO-8ZQ" secondAttribute="bottom" constant="32" id="Sha-1p-N07"/>
+                            <constraint firstItem="7ww-7T-ZdW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="XuW-IW-jF7"/>
+                            <constraint firstItem="Ed9-bA-csW" firstAttribute="top" secondItem="fdb-cO-8ZQ" secondAttribute="bottom" constant="31" id="fA6-qO-9rX"/>
+                            <constraint firstItem="Ed9-bA-csW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g29-gp-161"/>
+                            <constraint firstItem="Ed9-bA-csW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kmL-Iz-M1t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7ww-7T-ZdW" secondAttribute="trailing" constant="20" id="muH-ss-UNZ"/>
+                            <constraint firstItem="Ed9-bA-csW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nnj-Tr-Cus"/>
+                            <constraint firstItem="I4O-ts-zal" firstAttribute="top" secondItem="7ww-7T-ZdW" secondAttribute="bottom" constant="91" id="qxS-tR-v3j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ed9-bA-csW" secondAttribute="trailing" constant="20" id="sXC-aF-nch"/>
+                            <constraint firstItem="fdb-cO-8ZQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sjI-ex-zKr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5zc-yL-EQ2"/>
+                                <exclude reference="6Pu-6l-LIM"/>
+                                <exclude reference="fA6-qO-9rX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="7ww-7T-ZdW" id="uh4-3n-gnW"/>
+                        <outlet property="funFactLabel" destination="Ed9-bA-csW" id="z4C-0Y-bmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="428"/>
+        </scene>
+    </scenes>
+</document>
